@@ -11,7 +11,7 @@ PATH = "C:\Program Files (x86)\chromedriver.exe"
 
 # Import csv file 
 df = pd.read_excel (r'targetaccounts.xlsx')
-i = 0
+
 for i, row in df.iterrows():	
 	email = df.email
 	firstname = df.firstname
@@ -42,9 +42,6 @@ for i, row in df.iterrows():
 	    driver.quit()
 	    #skipcircle = driver.find_element_by_id("circle-skip")
 	    #skipcircle.click() 
-	    i = i + 1
 	except:
 	    driver.quit()
 	    
-
-	
